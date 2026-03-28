@@ -6,7 +6,7 @@ public class Recosion {
     }
     public static void isTi(int n){
 
-      if(n>10){
+      if(n>100){
           return;
       }
         System.out.println(n);
