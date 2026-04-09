@@ -1,26 +1,38 @@
 package GreedyAlgorithm;
 
+import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 
 public class MinimumPlatforms {
     public static void main(String[] args) {
 
 
     }
-    public static int minPlatform(int arr[], int dep[]) {
-        int n = arr.length;
 
-        int[][] arr1 = new int[n][2]; // n rows, 2 columns
+    public static int minPlatform(int start[], int end[]) {
 
-        for (int i = 0; i < n; i++) {
-            arr1[i][0] = arr[i]; // start time
-            arr1[i][1] = dep[i];   // end time
+        Arrays.sort(start);
+        Arrays.sort(end);
+        int i = 0;
+        int j = 0;
+        int max = 0;
+        int count = 0;
+        while (i < start.length) {
+
+
+            if (start[i] <= end[j]) {
+                count++;
+                i++;
+            } else {
+                count--;
+                j++;
+            }
+
+            max = Math.max(max, count);
         }
+        return max;
 
-        int count =0;
-        for (int i=0;i<arr1.length;i++){
-
-        }
 
     }
 

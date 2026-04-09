@@ -23,11 +23,11 @@ public class ShortestJobFirst {
             watingTime = watingTime + t;
 
             t = t + bt[i];
-            System.out.println("wating time "+ watingTime +" Time" +t);
+            System.out.println("wating time " + watingTime + " Time" + t);
 
 
         }
-        return watingTime / bt.length ;
+        return watingTime / bt.length;
 
 
     }
