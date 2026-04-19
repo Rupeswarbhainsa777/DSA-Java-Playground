@@ -34,7 +34,7 @@ All-Code-Of-Dsa/
     ├── Top_100_Coding_Question/    # 🏆 Top 100 interview coding questions
     │   ├── Arrays_String/          #     Arrays & Strings category
     │   └── Testing/                #     Scratch/testing files
-    ├── Sliding_window/             # 🪟 Sliding window technique problems
+    ├── SlidingWindow/             # 🪟 Sliding window technique problems
     ├── Java_Normal_Coding_Problem/ # 🧩 General coding interview problems
     ├── JavaDaily/                  # 📅 Daily practice logs
     ├── LeetCode/                   # 🌐 Miscellaneous LeetCode problems
@@ -133,7 +133,7 @@ All-Code-Of-Dsa/
 
 ---
 
-### 🪟 Sliding Window — `src/Sliding_window/`  *(4 Files)*
+### 🪟 Sliding Window — `src/SlidingWindow/`  *(4 Files)*
 
 | File | Topic / Description |
 |---|---|
