@@ -21,8 +21,8 @@ public class AverageOfLevels {
             for (int i = 0; i < size; i++) {
                 TreeNode node = queue.poll();
                 avg = avg + node.val;
-                if (node.left != null) que.add(node.left);
-                if (node.right != null) que.add(node.right);
+                if (node.left != null) queue.add(node.left);
+                if (node.right != null) queue.add(node.right);
             }
             list.add(avg / size);
         }
