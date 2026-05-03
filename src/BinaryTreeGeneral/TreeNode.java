@@ -49,4 +49,8 @@ public class TreeNode {
         }
     }
 
+//    public static void preOrder(TreeNode root){
+//
+//    }
+
 }
