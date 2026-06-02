@@ -19,18 +19,16 @@
 //
 //    public static void exist(char[][] board, String word) {
 //
-//        List<Character> list = new ArrayList<>();
-//        List<Character> list1 = new ArrayList<>();
 //
-//        char ch[] = word.toCharArray();
+//
+//       StringBuilder sb = new StringBuilder();
 //        for (int i = 0; i < board.length; i++) {
 //            for (int j = 0; j < board[i].length; j++) {
-//                list.add(board[i][j]);
-//
+//            sb.append(board[i][j]);
 //            }
 //        }
-//        Collections.sort(list);
-//        list.contains(list1);
+//        System.out.println(sb);
+//
 //
 //
 //    }
