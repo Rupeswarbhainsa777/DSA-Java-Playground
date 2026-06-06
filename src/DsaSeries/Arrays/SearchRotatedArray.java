@@ -1,7 +1,4 @@
-package DsaSeries;
-
-import java.util.HashMap;
-import java.util.Map;
+package DsaSeries.Arrays;
 
 public class SearchRotatedArray {
     public static void main(String[] args) {

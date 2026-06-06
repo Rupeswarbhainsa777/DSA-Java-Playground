@@ -1,4 +1,4 @@
-package DsaSeries;
+package DsaSeries.Arrays;
 
 public class SearchIn2D {
     public static void main(String[] args) {

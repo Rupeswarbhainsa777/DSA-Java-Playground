@@ -1,4 +1,4 @@
-package DsaSeries;
+package DsaSeries.Arrays;
 
 public class TrappingRainWater {
     public static void main(String[] args) {

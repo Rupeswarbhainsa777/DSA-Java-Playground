@@ -1,4 +1,4 @@
-package DsaSeries;
+package DsaSeries.Arrays;
 
 public class ProductExceptSelf {
     public static void main(String[] args) {
