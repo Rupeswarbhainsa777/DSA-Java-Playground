@@ -6,39 +6,64 @@ import java.util.Map;
 public class StringCompress {
     public static void main(String[] args) {
         // {"a","a","b","b","c","c","c"}
-        char arr[] = {'a','a','b','b','c','c','c'};
-//        System.out.println(compress(arr));
+        char arr[] = {'a', 'a', 'b', 'b', 'c', 'c', 'c'};
+        System.out.println(compress(arr));
 
-        for (int i=0;i<=10;i++){
-             i++;
-            System.out.println(i);
-        }
+//        String str = "12";
+//
+//        char c = str.charAt(1);
+//        System.out.println(c);
+//        String st = String.valueOf(12);
+//        System.out.println(st.charAt(0));
+
+
     }
 
     public static int compress(char[] chars) {
-        Map<Character, Integer> map = new HashMap<>();
 
-        for (char ch : chars) {
-            map.put(ch, map.getOrDefault(ch, 0) + 1);
-        }
-
-        int count = 0;
-        StringBuffer sb = new StringBuffer();
-        for (Map.Entry<Character, Integer> ent : map.entrySet()) {
-
-            if (ent.getValue() > 1) {
-                sb.append(ent.getKey());
-                sb.append(ent.getValue());
-                count = count + 2;
-            } else {
-                sb.append(ent.getKey());
+        int idx = 0;
+        for (int i = 0; i < chars.length; i++) {
+            char ch = chars[i];
+            int count = 0;
+            while (i < chars.length && chars[i] == ch) {
                 count++;
-
+                i++;
             }
-
+            if (count == 1) {
+                chars[idx++] = ch;
+            } else {
+                chars[idx++] = ch;
+                String value = String.valueOf(count);
+                for (int j = 0; j < value.length(); j++) {
+                    chars[idx++] = value.charAt(j);
+                }
+            }
+            i--;
         }
-        System.out.println(sb.toString());
-        return count;
+        return idx;
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
