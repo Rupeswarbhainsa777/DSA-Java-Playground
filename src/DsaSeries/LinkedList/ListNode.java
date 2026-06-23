@@ -1,12 +1,12 @@
 package DsaSeries.LinkedList;
 
-public class Node {
+public class ListNode {
 
 
     int data;
-    Node next;
+    ListNode next;
 
-    Node(int data) {
+    ListNode(int data) {
         this.data = data;
         this.next = null;
 
