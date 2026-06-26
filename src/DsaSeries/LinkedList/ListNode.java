@@ -3,11 +3,15 @@ package DsaSeries.LinkedList;
 public class ListNode {
 
 
-    int data;
+    int val;
     ListNode next;
 
-    ListNode(int data) {
-        this.data = data;
+    ListNode() {
+
+    }
+
+    ListNode(int val) {
+        this.val = val;
         this.next = null;
 
     }
