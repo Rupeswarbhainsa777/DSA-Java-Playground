@@ -36,7 +36,10 @@ public class Permutation {
         for (int number : arr) {
             if (tempList.contains(number)) continue;
             tempList.add(number);
+
+            System.out.println(tempList);
             helper(resList, tempList, arr);
+            System.out.println(tempList);
 
             tempList.remove(tempList.size() - 1);
 
