@@ -1,6 +1,6 @@
 # 📘 Java DSA Practice – LeetCode 75, 150, Top 100 & More
 
-Welcome to my **Java Data Structures & Algorithms (DSA)** practice repository! This is a comprehensive, actively maintained collection of solutions spanning **LeetCode 75**, **LeetCode 150**, **Top 100 Coding Questions**, daily coding challenges, sliding window, binary search, greedy algorithms, linked list, stack, two-pointer, prefix sum, recursion, pattern printing, and core data structure implementations — all written in **Java**.
+Welcome to my **Java Data Structures & Algorithms (DSA)** practice repository! This is a comprehensive, actively maintained collection of solutions spanning **LeetCode 75**, **LeetCode 150**, **Top 100 Coding Questions**, daily coding challenges, sliding window, binary search, greedy algorithms, linked list, stack, two-pointer, prefix sum, recursion, backtracking, intervals, pattern printing, and core data structure implementations — all written in **Java**.
 
 This repository serves as a personal knowledge base for mastering DSA concepts, sharpening problem-solving skills, and preparing for technical interviews.
 
@@ -13,19 +13,19 @@ This repository serves as a personal knowledge base for mastering DSA concepts, 
 | 🎯 **LeetCode 75** | Curated problem set targeting the most essential interview questions |
 | 📚 **LeetCode 150** | Broader set covering advanced topics and problem types |
 | 🏆 **Top 100 Coding Questions** | Classic interview questions on Arrays, Strings, OOP & Collections |
+| 📦 **DSA Series** | Structured deep-dive into Arrays, Strings, Linked Lists, Recursion & Backtracking |
 | 🔍 **Binary Search** | Binary search problems and implementations |
-| 🌳 **Binary Tree General** | Tree operations: invert, level order, symmetric, same tree |
+| 🌳 **Binary Tree General** | Tree operations: traversals, construction, views, properties & more |
 | 🪟 **Sliding Window** | Dedicated sliding window problems with clean implementations |
 | 💡 **Greedy Algorithm** | Greedy strategy problems (Job Scheduling, Jump Game, Knapsack) |
 | 🔗 **Linked List** | Singly linked list operations and LeetCode problems |
 | 📐 **Two Pointer** | Two-pointer technique problems |
 | ➕ **Prefix Sum** | Prefix sum and contiguous subarray problems |
 | 🔄 **Recursion** | Recursion fundamentals and practice |
-| 📦 **Stack** | Stack-based problem solving |
-| 📅 **Daily Challenges** | Date-stamped daily practice logs for consistent improvement |
-| 🌐 **LeetCode Misc** | Additional LeetCode problems outside structured study plans |
+| 📦 **Stack & MinStack** | Stack-based problem solving including MinStack design |
+| 📊 **Intervals** | Interval merging and insertion problems |
+| 📅 **LeetCode Daily** | Daily coding challenges for consistent improvement |
 | 🎨 **Patterns** | Pattern printing problems for logic building |
-| 🏗️ **Data Structures** | Core implementations like Binary Tree and Binary Search Tree |
 
 All solutions are written in **Java** with a focus on **code clarity**, **optimization**, and **best practices**.
 
@@ -44,19 +44,25 @@ All-Code-Of-Dsa/
     │   ├── Collections_And_Data_Structures/ # Collections & DS problems
     │   ├── Opps_JavaBasics/             #     OOP & Java basics practice
     │   └── Testing/                     #     Scratch/testing files
+    ├── DsaSeries/                       # 📦 Structured DSA deep-dive
+    │   ├── Arrays/                      #     Array problems & techniques
+    │   ├── LinkedList/                  #     Linked list fundamentals
+    │   ├── Strings/                     #     String manipulation problems
+    │   ├── RecursionAndBacktracking/    #     Recursion & backtracking problems
+    │   └── Raw/                         #     Raw scratch / testing
     ├── BinarySearch/                    # 🔍 Binary Search problems
     ├── BinaryTreeGeneral/               # 🌳 Binary Tree general problems
     ├── SlidingWindow/                   # 🪟 Sliding window technique problems
     ├── GreedyAlgorithm/                 # 💡 Greedy algorithm problems
     ├── Linked_List/                     # 🔗 Linked List problems
-    ├── TwoPointer/                      # 📐 Two Pointer technique problems
+    ├── TwoPointerCode/                  # 📐 Two Pointer technique problems
     ├── PrefixSum/                       # ➕ Prefix Sum problems
     ├── Recursion/                       # 🔄 Recursion fundamentals
     ├── Stack/                           # 📦 Stack-based problems
-    ├── JavaDaily/                       # 📅 Daily practice logs
-    ├── LeetCode/                        # 🌐 Miscellaneous LeetCode problems
-    ├── Pattern/                         # 🎨 Pattern printing problems
-    └── com/code/                        # 🏗️ Core Data Structure implementations
+    ├── MinStack/                        # 📦 MinStack design problem
+    ├── Intervals/                       # 📊 Interval problems
+    ├── LeetCodeDaily/                   # 📅 Daily LeetCode challenges
+    └── Pattern/                         # 🎨 Pattern printing problems
 ```
 
 ---
@@ -96,7 +102,7 @@ All-Code-Of-Dsa/
 
 ---
 
-### 📚 LeetCode 150 — `src/LeetCode_150/`  *(2 Solutions)*
+### 📚 LeetCode 150 — `src/LeetCode_150/`  *(3 Solutions)*
 
 #### Arrays & Strings — `Arrays_String/`
 
@@ -104,6 +110,7 @@ All-Code-Of-Dsa/
 |---|---|
 | `MergeSortedArray.java` | Merge two sorted arrays in-place |
 | `RemoveDuplicates.java` | Remove duplicates from sorted array |
+| `HIndex.java` | H-Index calculation |
 
 ---
 
@@ -151,6 +158,78 @@ All-Code-Of-Dsa/
 
 ---
 
+### 📦 DSA Series — `src/DsaSeries/`  *(47 Files)*
+
+A structured deep-dive series covering core DSA topics with comprehensive problem sets.
+
+#### Arrays — `Arrays/`  *(26 Files)*
+
+| File | Topic / Description |
+|---|---|
+| `BestTimeToBuyStock.java` | Best time to buy and sell stock |
+| `FindDuplicate.java` | Find the duplicate number |
+| `FindMedianSortedArrays.java` | Median of two sorted arrays |
+| `FourSum.java` | Four Sum – find all quadruplets |
+| `LengthOfLongestSubstring.java` | Longest substring without repeating characters |
+| `MajorityElement.java` | Majority element |
+| `MathSqrt.java` | Square root using math |
+| `MaximumSubArray.java` | Maximum subarray (Kadane's Algorithm) |
+| `MergeIntervals.java` | Merge overlapping intervals |
+| `MergeSortedArrays.java` | Merge sorted arrays |
+| `MissingAndRepeatedValues.java` | Find missing and repeated values |
+| `NextPermutation.java` | Next permutation of an array |
+| `PeakIndexInMountainArray.java` | Peak index in a mountain array |
+| `Permutation.java` | Permutations of an array |
+| `PowOfN.java` | Power function implementation |
+| `ProductExceptSelf.java` | Product of array except self |
+| `SearchIn2D.java` | Search in a 2D matrix |
+| `SearchRotatedArray.java` | Search in rotated sorted array |
+| `SingleNonDuplicate.java` | Single non-duplicate in sorted array |
+| `SingleNumber.java` | Single number (XOR approach) |
+| `SlidingWindowMaximum.java` | Sliding window maximum |
+| `SortColors.java` | Sort colors (Dutch National Flag) |
+| `SortedSquares.java` | Squares of a sorted array |
+| `SubarraySum.java` | Subarray sum equals k |
+| `ThreeSum.java` | Three Sum – find all triplets |
+| `TrappingRainWater.java` | Trapping rain water |
+
+#### LinkedList — `LinkedList/`  *(6 Files)*
+
+| File | Topic / Description |
+|---|---|
+| `ListNode.java` | ListNode class definition |
+| `LinkedListCycle.java` | Detect cycle in linked list |
+| `MergeTwoList.java` | Merge two sorted linked lists |
+| `MiddleOfList.java` | Find middle of linked list |
+| `PalindromeLinkList.java` | Check if linked list is a palindrome |
+| `ReverseLinkedList.java` | Reverse a singly linked list |
+
+#### Strings — `Strings/`  *(8 Files)*
+
+| File | Topic / Description |
+|---|---|
+| `LongestCommonPrefix.java` | Longest common prefix among strings |
+| `Palindrome.java` | Palindrome check for strings |
+| `PermutationOfString.java` | Permutation of a string |
+| `RemoveOccurrences.java` | Remove all occurrences of a substring |
+| `ReverseWords.java` | Reverse words in a string |
+| `StringCompress.java` | String compression |
+| `ValidAnagram.java` | Valid anagram check |
+| `WordSearch.java` | Word search in a 2D grid |
+
+#### Recursion & Backtracking — `RecursionAndBacktracking/`  *(6 Files)*
+
+| File | Topic / Description |
+|---|---|
+| `CombinationSum.java` | Combination Sum I |
+| `CombinationSum2.java` | Combination Sum II |
+| `PalindromicPartition.java` | Palindrome partitioning |
+| `SubSets1.java` | Generate all subsets (Power Set) |
+| `SubSet2.java` | Subsets with duplicates |
+| `Test.java` | Testing / scratch file |
+
+---
+
 ### 🔍 Binary Search — `src/BinarySearch/`  *(2 Files)*
 
 | File | Topic / Description |
@@ -160,15 +239,32 @@ All-Code-Of-Dsa/
 
 ---
 
-### 🌳 Binary Tree General — `src/BinaryTreeGeneral/`  *(5 Files)*
+### 🌳 Binary Tree General — `src/BinaryTreeGeneral/`  *(22 Files)*
 
 | File | Topic / Description |
 |---|---|
 | `TreeNode.java` | TreeNode class definition |
+| `CreateBinaryTree.java` | Binary tree construction |
+| `CreateBinaryTree2.java` | Alternate binary tree construction |
 | `InvertBinaryTree.java` | Invert/mirror a binary tree |
-| `LevelOrder.java` | Level order (BFS) traversal |
 | `SameTree.java` | Check if two trees are identical |
 | `SymmetricTree.java` | Check if a tree is symmetric |
+| `HeightOfTree.java` | Calculate height of a binary tree |
+| `DiameterOfBinaryTree.java` | Diameter of a binary tree |
+| `CountNode.java` | Count nodes in a complete binary tree |
+| `PathSum.java` | Path sum in a binary tree |
+| `Flatten.java` | Flatten binary tree to linked list |
+| `Cousins.java` | Cousins in binary tree |
+| `PopulatingNextRight.java` | Populating next right pointers |
+| `InorderTraversal.java` | Inorder traversal |
+| `PreorderTraversal.java` | Preorder traversal |
+| `PostOrder.java` | Postorder traversal |
+| `Bfs.java` | Breadth-first search traversal |
+| `LevelOrder.java` | Level order (BFS) traversal |
+| `LevelOrder2.java` | Level order traversal (alternate) |
+| `ZigzagLevelOrder.java` | Zigzag level order traversal |
+| `AverageOfLevels.java` | Average of levels in binary tree |
+| `BinaryTreeRightSideView.java` | Binary tree right side view |
 
 ---
 
@@ -216,26 +312,25 @@ All-Code-Of-Dsa/
 
 ---
 
-### 📐 Two Pointer — `src/TwoPointer/`  *(7 Files)*
+### 📐 Two Pointer — `src/TwoPointerCode/`  *(5 Files)*
 
 | File | Topic / Description |
 |---|---|
-| `LongPressedName.java` | Long pressed name validation |
-| `LongestSubstringWithoutRepeatingCharacters.java` | Longest substring without repeating characters |
-| `MaxConsecutiveOnes.java` | Maximum consecutive ones with at most k zeros |
-| `MaximumPointsYouCanObtainFromCards.java` | Maximum points obtainable from cards |
-| `NumberOfSubstringsContaining.java` | Number of substrings containing all three characters |
-| `SortArrayByParity.java` | Sort array so evens come before odds |
-| `SortedSquaresArray.java` | Squares of a sorted array |
+| `LengthOfLastWord.java` | Length of last word in a string |
+| `MostWater.java` | Container with most water |
+| `RemoveElement.java` | Remove element in-place |
+| `ReverseWords.java` | Reverse words in a string |
+| `SortColors.java` | Sort colors (Dutch National Flag) |
 
 ---
 
-### ➕ Prefix Sum — `src/PrefixSum/`  *(2 Files)*
+### ➕ Prefix Sum — `src/PrefixSum/`  *(3 Files)*
 
 | File | Topic / Description |
 |---|---|
 | `PrefixSum.java` | Prefix sum fundamentals and range queries |
 | `ContiguousSubarraySum.java` | Contiguous subarray sum equals k |
+| `Testing.java` | Testing / scratch file |
 
 ---
 
@@ -256,43 +351,32 @@ All-Code-Of-Dsa/
 
 ---
 
-### 📅 Daily Practice — `src/JavaDaily/`  *(19 Files)*
+### 📦 MinStack — `src/MinStack/`  *(1 File)*
 
 | File | Topic / Description |
 |---|---|
-| `Feb_2.java` | Feb 2 daily challenge |
-| `Feb_7.java` | Feb 7 daily challenge |
-| `Feb_09.java` | Feb 9 daily challenge |
-| `Feb_13.java` | Feb 13 daily challenge |
-| `ContainsDuplicate.java` | Contains duplicate check |
-| `FindDuplicat.java` | Find duplicate number in array |
-| `FindMedianSortedArrays.java` | Median of two sorted arrays |
-| `FindSingleElement.java` | Find the single non-duplicate in sorted array |
-| `LongestPalindromicSubstring.java` | Longest palindromic substring |
-| `MinimumDistance.java` | Minimum distance between two elements |
-| `MissingNumber.java` | Find missing number in range |
-| `PlusOne.java` | Increment a number represented as an array |
-| `Recosion.java` | Recursion basics / practice |
-| `RevANumber.java` | Reverse a number |
-| `RevCharArray.java` | Reverse a character array |
-| `RomenToInteger.java` | Roman numerals to integer conversion |
-| `TwoSumPair.java` | Two sum pair finding |
-| `Test.java` | Scratch / testing file |
-| `Test2.java` | Scratch / testing file 2 |
+| `MinStack.java` | Design a stack that supports getMin in O(1) |
 
 ---
 
-### 🌐 Miscellaneous LeetCode — `src/LeetCode/`  *(7 Files)*
+### 📊 Intervals — `src/Intervals/`  *(1 File)*
 
 | File | Topic / Description |
 |---|---|
-| `BestTimeToBuy.java` | Best time to buy and sell stock |
-| `CounterMajorityElement.java` | Count majority element occurrences |
-| `Majority.java` | Majority element (alternate approach) |
-| `Leetcode2441.java` | LeetCode #2441 |
-| `Rotete.java` | Rotate array |
-| `SortingMerge.java` | Merge sort implementation |
-| `SubStringWithoutRep.java` | Longest substring without repeating characters |
+| `InsertInterval.java` | Insert an interval into a sorted set of intervals |
+
+---
+
+### 📅 LeetCode Daily — `src/LeetCodeDaily/`  *(6 Files)*
+
+| File | Topic / Description |
+|---|---|
+| `CountSpecialChar.java` | Count special characters in a string |
+| `LeftRightDifference.java` | Left and right difference of array |
+| `NumberOfSubstringsContainsChar.java` | Number of substrings containing all characters |
+| `NumbersOfSubString.java` | Count substrings |
+| `ProcessStr.java` | String processing challenge |
+| `SumAndMultiply.java` | Sum and multiply operations |
 
 ---
 
@@ -302,15 +386,6 @@ All-Code-Of-Dsa/
 |---|---|
 | `Characters.java` | Character-based pattern printing |
 | `F14.java` | Complex pattern printing (multiple patterns) |
-
----
-
-### 🏗️ Core Data Structures — `src/com/code/`  *(2 Files)*
-
-| File | Topic / Description |
-|---|---|
-| `BinaryTree.java` | Binary Tree implementation with traversals |
-| `BinarySearchTree.java` | Binary Search Tree implementation |
 
 ---
 
@@ -336,39 +411,42 @@ All-Code-Of-Dsa/
 | Category | Files / Problems |
 |---|---|
 | 🎯 LeetCode 75 | 26 solutions |
-| 📚 LeetCode 150 | 2 solutions |
+| 📚 LeetCode 150 | 3 solutions |
 | 🏆 Top 100 Coding Questions | 14 (Arrays & Strings) + 2 (Collections) + 7 (OOP) = **23 files** |
+| 📦 DSA Series | 26 (Arrays) + 6 (LinkedList) + 8 (Strings) + 6 (Recursion & Backtracking) = **46 files** |
 | 🔍 Binary Search | 2 solutions |
-| 🌳 Binary Tree General | 5 solutions |
+| 🌳 Binary Tree General | 22 solutions |
 | 🪟 Sliding Window | 1 solution |
 | 💡 Greedy Algorithm | 10 solutions |
 | 🔗 Linked List | 11 solutions |
-| 📐 Two Pointer | 7 solutions |
-| ➕ Prefix Sum | 2 solutions |
+| 📐 Two Pointer | 5 solutions |
+| ➕ Prefix Sum | 3 solutions |
 | 🔄 Recursion | 1 solution |
 | 📦 Stack | 1 solution |
-| 📅 Daily Challenges | 19 entries |
-| 🌐 Misc LeetCode | 7 solutions |
+| 📦 MinStack | 1 solution |
+| 📊 Intervals | 1 solution |
+| 📅 LeetCode Daily | 6 entries |
 | 🎨 Patterns | 2 files |
-| 🏗️ Data Structures | 2 implementations |
-| **Total** | **125+ Files** |
+| **Total** | **165+ Files** |
 
 ---
 
 ## 📝 Study Plan Progress
 
 - [x] **LeetCode 75** — In Progress *(26/75 problems solved)*
-- [x] **LeetCode 150** — In Progress *(2/150 problems solved)*
+- [x] **LeetCode 150** — In Progress *(3/150 problems solved)*
 - [x] **Top 100 Coding Questions** — In Progress (Arrays + Collections + OOP)
+- [x] **DSA Series** — Active 🔥 *(46 problems across Arrays, Strings, LinkedList, Recursion & Backtracking)*
 - [x] **Binary Search** — Active 🆕
-- [x] **Binary Tree General** — Active 🆕
+- [x] **Binary Tree General** — Active 🔥 *(22 problems solved)*
 - [x] **Greedy Algorithm** — Active 🆕
 - [x] **Linked List** — Active 🆕
 - [x] **Two Pointer** — Active 🆕
 - [x] **Prefix Sum** — Active 🆕
-- [x] **Stack** — Active 🆕
-- [x] **Recursion** — Active 🆕
-- [x] **Daily Consistency** — Active 🔥
+- [x] **Stack & MinStack** — Active 🆕
+- [x] **Intervals** — Active 🆕
+- [x] **Recursion & Backtracking** — Active 🆕
+- [x] **LeetCode Daily** — Active 🔥
 - [ ] **Graph Problems** — Coming Soon
 - [ ] **Dynamic Programming** — Coming Soon
 
@@ -376,7 +454,7 @@ All-Code-Of-Dsa/
 
 ## 🧠 Topics Covered
 
-`Arrays` · `Strings` · `Two Pointers` · `Sliding Window` · `Hashing` · `Stack` · `Queue` · `Linked List` · `Binary Tree` · `Binary Search Tree` · `Binary Search` · `Greedy` · `Prefix Sum` · `DFS` · `BFS` · `Recursion` · `Sorting` · `Searching` · `Kadane's Algorithm` · `Math & Number Theory` · `OOP & Design Patterns` · `Pattern Printing`
+`Arrays` · `Strings` · `Two Pointers` · `Sliding Window` · `Hashing` · `Stack` · `MinStack` · `Queue` · `Linked List` · `Binary Tree` · `Binary Search Tree` · `Binary Search` · `Greedy` · `Prefix Sum` · `DFS` · `BFS` · `Recursion` · `Backtracking` · `Intervals` · `Sorting` · `Searching` · `Kadane's Algorithm` · `Math & Number Theory` · `OOP & Design Patterns` · `Pattern Printing`
 
 ---
 
