@@ -18,21 +18,26 @@ public class RotateAnArray {
         int form = sc.nextInt();
 
         rotate(arr, form);
-        reverse(arr);
 
-        for (int i=0;i<arr.length;i++){
-            System.out.print(arr[i]+" ");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
         }
 
     }
 
     public static void rotate(int arr[], int form) {
 
+        int n = arr.length;;
+        form = form % arr.length;
+
+        reverse(arr,0,n-1);
+        reverse(arr,0,form-1);
+        reverse(arr,form,n-1);
+
+
     }
 
-    public static void reverse(int arr[]) {
-        int left = 0;
-        int right = arr.length - 1;
+    public static void reverse(int arr[], int left, int right) {
 
         while (left < right) {
             int temp = arr[left];
