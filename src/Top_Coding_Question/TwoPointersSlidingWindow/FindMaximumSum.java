@@ -18,10 +18,10 @@ public class FindMaximumSum {
 
                 int findMax = 0;
                 for (int k = j; k < i + j; k++) {
-                   findMax+=arr[k];
+                    findMax += arr[k];
                 }
-                if(findMax>max){
-                    max=findMax;
+                if (findMax > max) {
+                    max = findMax;
                 }
             }
         }
@@ -29,4 +29,49 @@ public class FindMaximumSum {
 
 
     }
+
+    public static int maximumSumByTwoPointer(int arr[]) {
+        int max = Integer.MIN_VALUE;
+
+        int i = 0;
+        int j = 1;
+
+        while (j < arr.length) {
+            int findMax = 0;
+
+            for (int k = i; k <= j; k++) {
+                findMax += arr[k];
+            }
+
+            if (findMax > max) {
+                max = findMax;
+            }
+
+            i++;
+            j++;
+        }
+
+        return max;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
