@@ -1,21 +1,18 @@
 package Top_Coding_Question.LinkList;
 
-
-
-public  class ListNode {
+public class ListNode {
     int val;
-    Linked_List.ListNode next;
+    ListNode next;
 
-    ListNode() {}
+    ListNode() {
+    }
 
     ListNode(int val) {
         this.val = val;
     }
 
-    ListNode(int val, Linked_List.ListNode next) {
+    ListNode(int val, ListNode next) {
         this.val = val;
         this.next = next;
     }
-
-
 }
